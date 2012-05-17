@@ -31,36 +31,19 @@
 				</div>
 			</div>
 			<div class="sun slideshow">
-				
-				<img src="images/sun1.png" id="glow" width="151" height="151" alt="image" />
+				<img src="images/sun3.png" style="position:absolute;" id="grey" width="151" height="151" alt="image" />				
+				<img src="images/sun1.png" id="glow" style="position:absolute;z-index:99999;"width="151" height="151" alt="image" />
 				<img src="images/sun2.png" style="display:none" id="stop" width="151" height="151" alt="image" />
-				<img src="images/sun3.png" style="display:none" id="grey" width="151" height="151" alt="image" />
+
 			</div>
 			<span class="awakening">AWAKENING SEP 2012</span>
 		</div>
 		<script type="text/javascript">
-		
-		
 		function startSlideshow() {
-			   $("#glow").fadeIn(1000).delay(10500).fadeOut(1500); //13000
-		
-		    $("#stop").delay(10000).fadeIn(1500).delay(11000).fadeOut(1500); //27000
-		    $("#grey").delay(25000).fadeIn(1500).delay(11000).fadeOut(1500, startSlideshow); //41000
-
+			$('#glow').fadeIn(1000).delay(1000).fadeOut(2200, startSlideshow);
 		}
 		$(document).ready(function() {
-			
-
-				
 			startSlideshow();
-			
-			/*
-		    $('.slideshow').cycle({
-				fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-				speed: 300, // no. of milliseconds to move between slide
-				timeout: 2000
-			});
-			*/
 		});
 		</script>
 		
