@@ -240,7 +240,6 @@ h6{
 	width:151px;
 	height:151px;
 	margin:0 auto;
-	background:url(../images/bg-sun.png) no-repeat;
 	position:relative;
 }
 .sun-sleep{background-position:0 -151px;}

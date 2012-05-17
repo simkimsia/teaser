@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
 		<script type="text/javascript" src="js/center-align.js"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -29,25 +30,39 @@
 					</div>
 				</div>
 			</div>
-			
-			<div id="storybot-glow" class="sun" ></div>
-<!--			<div id="storybot-sleep-grey" class="sun sun-sleep-grey"></div> -->
-<!--			<div id="storybot-sleep" class="sun sun-sleep"></div> -->
+			<div class="sun slideshow">
+				
+				<img src="images/sun1.png" id="glow" width="151" height="151" alt="image" />
+				<img src="images/sun2.png" style="display:none" id="stop" width="151" height="151" alt="image" />
+				<img src="images/sun3.png" style="display:none" id="grey" width="151" height="151" alt="image" />
+			</div>
 			<span class="awakening">AWAKENING SEP 2012</span>
 		</div>
+		<script type="text/javascript">
 		
-		<script type="text/javscript">
+		
+		function startSlideshow() {
+			   $("#glow").fadeIn(1000).delay(10500).fadeOut(1500); //13000
+		
+		    $("#stop").delay(10000).fadeIn(1500).delay(11000).fadeOut(1500); //27000
+		    $("#grey").delay(25000).fadeIn(1500).delay(11000).fadeOut(1500, startSlideshow); //41000
 
-			function startSlideshow(){
-			    $("#storybot-glow").fadeIn(10000).delay(10500).fadeOut(15000, startSlideshow); //13000
-//			    $("#storybot-glow").delay(13000).fadeIn(1500).delay(11000).fadeOut(1500, startSlideshow); //27000
-//			    $("div.text_b3").delay(27000).fadeIn(1500).delay(11000).fadeOut(1500); //41000
-//			    $("div.text_b4").delay(41000).fadeIn(1500).delay(11000).fadeOut(1500, startSlideshow); //55000
-			  }
+		}
+		$(document).ready(function() {
 			
-			  $(document).ready(function(){
-			    startSlideshow();
-			  });
+
+				
+			startSlideshow();
+			
+			/*
+		    $('.slideshow').cycle({
+				fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+				speed: 300, // no. of milliseconds to move between slide
+				timeout: 2000
+			});
+			*/
+		});
 		</script>
+		
 	</body>
 </html>
