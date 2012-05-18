@@ -78,16 +78,20 @@ h6{
 	position:relative;
 }
 #wrapper{
-	width:335px;
+	width:330px;
 	margin:0 auto;
 	position:relative;
 	padding:30px 0;
 }
 #main{
-	padding:18px 31px;
+	padding-top:20px;
+	padding-right:27px;
+	padding-left:27px;
+	padding-bottom:23px;
 	background:url(../images/bg-wrapper.png);
 	border:1px solid #fff;
 	position:relative;
+	top:1px;
 	-webkit-border-radius:6px;
 	-moz-border-radius:6px;
 	border-radius:6px;
@@ -159,7 +163,7 @@ h6{
 	padding:5px 6px;
 	height:17px;
 	overflow:hidden;
-	background:url(../images/bg-forms.png) no-repeat;
+	background:url(../images/bg-forms-new.png) no-repeat;
 }
 .form-email .parent-focus{background-position:0 -27px;}
 .form-email .text-form{
@@ -207,7 +211,7 @@ h6{
 	padding:0 10px;
 	height:26px;
 	overflow:hidden;
-	background:url(../images/bg-forms.png) no-repeat 0 -54px;
+	background:url(../images/bg-forms-new.png) no-repeat 0 -54px;
 }
 .form-link .parent-focus{background-position:0 -80px;}
 .form-link input{
