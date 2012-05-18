@@ -100,7 +100,7 @@ h6{
 	background:url(../images/btn-close.png) no-repeat;
 	position:absolute;
 	right:10px;
-	top:7px;
+	top:10px;
 }
 .btn-close:hover{background-position:0 -12px;}
 #main-nav{
@@ -254,10 +254,10 @@ h6{
 }
 .sun .txt{
 	position:absolute;
-	left:-27px;
-	top:-27px;
-	width:204px;
-	height:205px;
+	left:-29px;
+	top:-30px;
+	width:208px;
+	height:208px;
 	background:url(../images/txt.png) no-repeat;
 	overflow:hidden;
 	text-indent:-9999px;
