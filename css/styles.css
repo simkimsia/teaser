@@ -82,6 +82,8 @@ h6{
 	margin:0 auto;
 	position:relative;
 	padding:30px 0;
+	background:url(../images/bg-light.png) no-repeat 50% 50%;
+	min-height:258px;
 }
 #main{
 	padding-top:20px;
@@ -159,17 +161,18 @@ h6{
 	padding-bottom:8px;
 }
 .form-email .holder{
-	width:259px;
-	padding:5px 6px;
-	height:17px;
+	width:240px;
+	height:26px;
+	margin: 0 auto;
+	
 	overflow:hidden;
-	background:url(../images/bg-forms-new.png) no-repeat;
+	background:url(../images/textbox.png) no-repeat;
 }
-.form-email .parent-focus{background-position:0 -27px;}
+.form-email .parent-focus{background:url(../images/textbox-selected.png) no-repeat;}
 .form-email .text-form{
 	float:left;
-	width:235px;
-	padding:0 3px;
+	width:190px;
+	padding:4px 10px;
 	margin:0;
 	background:none;
 	border:0;
@@ -182,11 +185,13 @@ h6{
 	text-indent:-9999px;
 	line-height:0;
 	padding:0;
-	margin:1px 0 0;
-	background:none;
+	margin: 5px 6px 0 0;
+	background:url(../images/btn-grey.png) no-repeat;
 	border:0;
 	cursor:pointer;
 }
+.form-email .parent-focus .btn-email{background:url(../images/btn-orange.png) no-repeat;}
+.form-email .parent-focus .btn-email:hover{background:url(../images/btn-lightorange.png) no-repeat;}
 .share{
 	text-align:center;
 	padding-bottom:7px;
@@ -211,9 +216,9 @@ h6{
 	padding:0 10px;
 	height:26px;
 	overflow:hidden;
-	background:url(../images/bg-forms-new.png) no-repeat 0 -54px;
+	background:url(../images/textbox.png) no-repeat;
 }
-.form-link .parent-focus{background-position:0 -80px;}
+.form-link .parent-focus{background:url(../images/textbox-selected.png) no-repeat;}
 .form-link input{
 	float:left;
 	width:220px;
